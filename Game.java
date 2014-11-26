@@ -46,7 +46,7 @@ public class Game implements ActionListener
 			if (e.getSource()==shootButton)
 			{
 				
-				System.out.println("\nYou fired! \nHarry loses 50 Health points.");
+				System.out.println("\n\nYou fired! \nHarry loses 50 Health points.\n");
 				
 				area.setText(null); //remove all text from JTextArea
 				p.playerShootsHarry(h);
@@ -77,7 +77,7 @@ public class Game implements ActionListener
    		   		Thread.currentThread().interrupt();
 		   		}
 		   		
-		   		System.out.println("\nYour turn again . . . ");
+		   		System.out.println("\n\nYour turn again . . . ");
 				
 	}
 }
