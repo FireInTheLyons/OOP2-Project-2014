@@ -21,7 +21,7 @@ public class Harry {
 	
 	public Harry() 
 	  {
-	   	this("\n\nHarry",5, 100);
+	   	this("\n\nHarry", 5, 100);
 	  }
 	
 	//Mutators

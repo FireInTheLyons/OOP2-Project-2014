@@ -2,9 +2,25 @@ import javax.swing.*;
 
 public class Player {
 	private String name;
-	protected int health;
-	private int ammo;
 	
+	protected int health = (int)(Math.random()*50);		
+	private int ammo = (int)(Math.random()*6);
+	
+	/*public Player(String name)
+	{
+		setName(JOptionPane.showInputDialog("Please enter your name... ") "Player");
+		setAmmo(ammo);
+		setHealth(health);
+	}*/
+	
+	public Player() 
+	  {
+	   	name = "Player";
+	   	ammo = 5;
+	   	health = 100;
+	  }
+		  
+	  
 	//Constructor Methods
 	public Player(String name, int ammo, int health)
 	{
@@ -12,18 +28,6 @@ public class Player {
 		setAmmo(ammo);
 		setHealth(health);
 	}
-	
-	public Player(String name)
-	{
-		setName(/*JOptionPane.showInputDialog("Please enter your name... ")*/ "Player");
-		setAmmo(5);
-		setHealth(100);
-	}
-	
-	public Player() 
-	  {
-	   	this("Player",5, 100);
-	  }
 	
 	
 	//Mutators

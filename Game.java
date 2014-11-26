@@ -7,6 +7,7 @@ import javax.swing.*;
 
 public class Game implements ActionListener
 {
+
 	//declaring GUI elements and objects
 	static JButton shootButton;
 	static JTextArea area;
@@ -37,8 +38,7 @@ public class Game implements ActionListener
 		
 		System.out.println("\nYour turn . . . ");
 	}
-		
-	
+			
 	
 	public void actionPerformed(ActionEvent e)
 	{
@@ -54,7 +54,7 @@ public class Game implements ActionListener
 				
 						if(h.health==0)
 							{
-								JOptionPane.showMessageDialog(null, "Game over! Harry is dead!");
+								JOptionPane.showMessageDialog(null, "\nGame over! Harry is dead! \n\nQuitting the game . . . \n");
 								System.exit(0);
 							}
 						}
@@ -79,7 +79,6 @@ public class Game implements ActionListener
 		   		
 		   		System.out.println("\nYour turn again . . . ");
 				
-
 	}
 }
 
